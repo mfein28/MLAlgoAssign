@@ -42,8 +42,7 @@ class LogRegress:
             if (self.verbose == True and i % 100 == 0):
                 z = np.dot(X, self.theta)
                 h = self.sigmoid(z)
-                print(f'loss: {self.__loss(h, y)} \t')
-
+            
 
     def predict_probability(self, X):
         if self.fitInt:
